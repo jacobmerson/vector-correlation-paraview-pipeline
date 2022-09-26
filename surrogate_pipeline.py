@@ -30,7 +30,7 @@ surrogateOrientation.Script = """
 import vectorcorrelation
 # force reload of vectorcorrelation module
 import importlib; importlib.reload(vectorcorrelation.paraview)
-vectorcorrelation.paraview.surrogate_orientation(inputs, output)
+vectorcorrelation.paraview.surrogate_orientation(self,inputs, output)
 """
 surrogateOrientation.PythonPath = pythonPath
 UpdatePipeline(time=0.0, proxy=surrogateOrientation)
